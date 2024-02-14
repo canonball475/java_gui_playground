@@ -10,12 +10,18 @@ public class TeamPanel extends JPanel {
     public TeamPanel() {
         memberLabels = new JLabel[TEAM_SIZE];
 
-        // create your own label that have an image and your name as text.
+
+         //create your own label that have an image and your name as text.
         memberLabels[0] = new JLabel("Bret", new ImageIcon("minsc.jfif"), SwingConstants.CENTER);
         memberLabels[0].setHorizontalTextPosition(SwingConstants.CENTER);
         memberLabels[0].setVerticalTextPosition(SwingConstants.BOTTOM);
-        memberLabels[1] = new JLabel();
+        memberLabels[1] = new JLabel("Owen", new ImageIcon("BruceBear.png"), SwingConstants.CENTER);
+        memberLabels[1].setHorizontalTextPosition(SwingConstants.CENTER);
+        memberLabels[1].setVerticalTextPosition(SwingConstants.BOTTOM);
+        memberLabels[2] = new JLabel();
         memberLabels[2] = new JLabel("Canon", new ImageIcon("fries.jpg"), SwingConstants.CENTER);
+
+ 
 
 
 
@@ -23,7 +29,10 @@ public class TeamPanel extends JPanel {
             this.add(member);
         }
 
-        this.setPreferredSize(new Dimension(500, 500));
+
+
+        this.setPreferredSize(new Dimension(750, 1000));
+
         this.setBackground(Color.LIGHT_GRAY);
 
 
